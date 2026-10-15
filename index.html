@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ноготочки · Салон красоты</title>
-<meta name="description" content="Цены на ногти с карточки на Яндекс Картах – ниже, по разделам: маникюр, педикюр, дизайн. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.">
+<meta name="description" content="Цены на ногти с карточки на Яндекс Картах – в разделах ниже: откройте маникюр, педикюр или дизайн и уход, внутри полный прайс. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Маникюр и педикюр в Челябинске – ежедневно до 21:00">
-<meta property="og:description" content="Цены на ногти с карточки на Яндекс Картах – ниже, по разделам: маникюр, педикюр, дизайн. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.">
+<meta property="og:description" content="Цены на ногти с карточки на Яндекс Картах – в разделах ниже: откройте маникюр, педикюр или дизайн и уход, внутри полный прайс. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%234f6b55%27/%3E%3C/svg%3E">
@@ -25,6 +25,7 @@
 :root { --c-canvas: #f3f3ee; --c-surface: #ffffff; --c-ink: #1e221f; --c-ink-soft: #5b625b; --c-accent: #4f6b55; --c-accent-ink: #f4f8f2; --c-accent-deep: #3c5642; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<link rel="stylesheet" href="tiles.css">
 </head>
 <body class="s-prod" id="top" data-wa="79026084145" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -39,7 +40,7 @@
     <div class="s-hero__text">
       <p class="s-eyebrow">Маникюр и педикюр · Челябинск</p>
       <h1>Маникюр и педикюр в Челябинске – ежедневно до 21:00</h1>
-      <p class="s-lead">Цены на ногти с карточки на Яндекс Картах – ниже, по разделам: маникюр, педикюр, дизайн. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.</p>
+      <p class="s-lead">Цены на ногти с карточки на Яндекс Картах – в разделах ниже: откройте маникюр, педикюр или дизайн и уход, внутри полный прайс. Выберите услугу, день и время – сообщение в WhatsApp салона соберётся само. Ул. Свободы, 86.</p>
       <ul class="s-ticks"><li>Цена названа до записи</li><li>Ежедневно 10:00–21:00</li><li>4,5 на Яндекс.Картах</li></ul>
       <p class="s-rating"><b>4,5</b> на Яндекс.Картах · 74 отзыва</p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Вход в салон «Ноготочки» с вывеской «Маникюр + педикюр» на фасаде" loading="lazy" decoding="async" style="object-position:50% 45%"></figure>
@@ -71,11 +72,15 @@
   </section>
 
   <section class="s-section s-reveal" id="prices">
-    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Услуги маникюра и педикюра с вкладки «Товары и услуги» на Яндекс Картах, одна цена на услугу.</p></header>
-    <div class="s-board"><div class="s-board__group">
-      <h3 class="s-board__title">Маникюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Снятие + маникюр + покрытие гель-лаком</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 700 ₽</span></li>
+    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Откройте раздел – внутри полный прайс с вкладки «Товары и услуги» на Яндекс Картах, одна цена на услугу.</p></header>
+    <div class="s-tiles" style="--cols:3">
+      <button class="s-tile" type="button" style="--i:1" id="tile1-btn" aria-expanded="false" aria-controls="tile1">
+        <img class="s-tile__img" src="assets/tile-manikyur.webp" alt="Маникюрные столы с лампами в светлом зале с розовой стеной" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Маникюр</span><span class="s-tile__meta">12 услуг · от 500 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile1" role="region" aria-labelledby="tile1-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Снятие + маникюр + покрытие гель-лаком</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 700 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие + маникюр + гель-лак, мидл мастер<em>снятие бесплатное</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 600 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие + маникюр + покрытие гелем</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие гель-лака + маникюр + покрытие лаком</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 100 ₽</span></li>
@@ -87,12 +92,15 @@
         <li class="s-board__row"><span class="s-board__name">Наращивание ногтей</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">3 500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Коррекция наращенных ногтей</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 100 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Коррекция наращивания, мидл мастер</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 700 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Педикюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Полный педикюр + гель-лак<em>стопа и пальцы, снятие бесплатно</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 300 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:2" id="tile2-btn" aria-expanded="false" aria-controls="tile2">
+        <img class="s-tile__img" src="assets/tile-pedikyur.webp" alt="Ногти на ногах с ярко-синим покрытием, снимок с логотипом студии" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Педикюр</span><span class="s-tile__meta">10 услуг · от 700 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile2" role="region" aria-labelledby="tile2-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Полный педикюр + гель-лак<em>стопа и пальцы, снятие бесплатно</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Полный педикюр + лечебный лак</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 950 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр без покрытия</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 950 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">SPA-педикюр PodiaFarm без покрытия<em>растительные препараты</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 400 ₽</span></li>
@@ -102,12 +110,15 @@
         <li class="s-board__row"><span class="s-board__name">Обработка только стопы</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">700 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Мужской педикюр</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Парамедицинский педикюр<em>гигиеническая обработка ногтей и стоп</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 500 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Дизайн и уход</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Градиент на все ногти<em>аэропуффингом или кистью</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:3" id="tile3-btn" aria-expanded="false" aria-controls="tile3">
+        <img class="s-tile__img" src="assets/tile-dop.webp" alt="Миндалевидные ногти с розовым и серебристым дизайном" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Дизайн и уход</span><span class="s-tile__meta">9 услуг</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile3" role="region" aria-labelledby="tile3-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Градиент на все ногти<em>аэропуффингом или кистью</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">«Кошачий глаз» на все ногти</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">200 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Френч на все ногти</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Втирка</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
@@ -116,8 +127,9 @@
         <li class="s-board__row"><span class="s-board__name">Ремонт одного ногтя</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Парафинотерапия</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">450 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие гель-лака</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">400 ₽</span></li>
-      </ul>
-    </div></div>
+        </ul>
+      </div>
+    </div>
     <p class="s-note">Цены взяты с вкладки «Товары и услуги» на карточке «Ноготочки» на Яндекс Картах на 14 октября 2026. Время процедур на карточке не указано. Брови, ресницы, стрижки и массаж здесь не показаны: они есть на карточке на Картах.</p>
   </section>
 
@@ -177,5 +189,6 @@
 <footer class="s-foot"><p>Ноготочки · Челябинск</p><p>Маникюр, педикюр, гель-лак, наращивание, японский маникюр, SPA-педикюр и парамедицинский педикюр</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться онлайн</a><a class="s-btn s-btn--ghost" href="tel:+79026084145">Позвонить</a></nav>
 <script src="style.js" defer></script>
+<script src="tiles.js" defer></script>
 </body>
 </html>
